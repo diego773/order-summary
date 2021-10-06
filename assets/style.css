@@ -8,7 +8,9 @@ body {
   font-family: "Red Hat Display", sans-serif;
 }
 
-/* landing page background */
+/* WRAPPER */
+
+/* WAVES BACKGROUND */
 .background {
   background-color: hsl(225, 100%, 94%);
   width: 100vw;
@@ -18,6 +20,9 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* Card */
@@ -27,16 +32,21 @@ body {
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  box-shadow: 5px 10px 18px hsl(224, 23%, 55%);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 /* Hero image */
-.image {
+.hero-header .image {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   max-width: 100%;
 }
 
-/* Hero image header */
+/* hero image header */
 .hero-header {
   display: flex;
   justify-content: center;
@@ -61,6 +71,7 @@ body {
 
 /* summary header */
 h1 {
+  font-family: inherit;
   font-size: 1.7rem;
   font-weight: 900;
   letter-spacing: 0.5px;
@@ -68,6 +79,7 @@ h1 {
 
 /* paragraph description */
 .description {
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 500;
   color: hsl(224, 23%, 55%);
@@ -77,7 +89,7 @@ h1 {
   margin-right: 50px;
 }
 
-/* iiner box section */
+/* inner box section */
 .inner-box {
   width: 400px;
   height: 75px;
@@ -89,40 +101,45 @@ h1 {
   border-radius: 8px;
   background-color: hsl(225, 100%, 98%);
   margin-top: 20px;
-  /* padding-top: 20px;
-  padding-bottom: 30px; */
 }
 
+/* MIDDLE SECTION */
+
+/* music icon */
 .music-img {
-  /* width: auto;
-  height: auto; */
   padding-left: 1rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
+/* annual year div */
 .ann-yr {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   padding-left: 16px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
+/* annual plan */
 h4 {
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 900;
 }
 
-.inner-box .price {
+/* price */
+.price {
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 500;
   color: hsl(224, 23%, 55%);
   padding-top: 0.3rem;
 }
 
-.inner-box .change {
+/* change */
+.change {
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 700;
   color: hsl(245, 75%, 52%);
@@ -131,37 +148,57 @@ h4 {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 20px;
-  /* display: flex; */
-  /* justify-content: space-around; */
+  cursor: pointer;
 }
 
-.btn {
+.change :hover {
+  color: hsl(245, 100%, 71%);
+}
+
+/* selection button */
+.selection {
+  font-family: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  /* cursor: pointer; */
 }
 
+/* payment button */
 .payment {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
   width: 400px;
   height: 50px;
   border-radius: 15px;
   background-color: hsl(245, 75%, 52%);
   color: white;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
   border: none;
-  box-shadow: 0px, 1px, 1px, 0px black;
+  box-shadow: 5px 10px 18px hsl(224, 23%, 55%);
+  cursor: pointer;
 }
 
+.selection :hover {
+  background-color: hsl(245, 100%, 71%);
+}
+/* cancel button  */
 .cancel {
+  font-family: inherit;
   margin-top: 20px;
   color: hsl(224, 23%, 55%);
   font-size: 16px;
   font-family: inherit;
   font-weight: 700;
-  border: none;
-  background-color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancel :hover {
+  color: black;
 }
