@@ -4,14 +4,9 @@
   box-sizing: border-box;
 }
 
+/* Body font style */
 body {
   font-family: "Red Hat Display", sans-serif;
-}
-
-/* WRAPPER */
-
-/* WAVES BACKGROUND */
-.background {
   background-color: hsl(225, 100%, 94%);
   width: 100vw;
   height: 100vh;
@@ -19,19 +14,30 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   background-image: url("../images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-/* Card */
-.music-card {
+/* WRAPPER */
+
+/* WAVES BACKGROUND */
+.background {
+  /* background-color: hsl(225, 100%, 94%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain; */
+}
+
+/* Card */
+.music-card {
+  /* margin-top: 5rem; */
   box-shadow: 5px 10px 18px hsl(224, 23%, 55%);
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -56,10 +62,12 @@ body {
 .middle {
   background-color: white;
   width: 450px;
-  height: 410px;
+  height: 450px;
   padding-top: 40px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  /* margin-top: 100px; */
+  margin-bottom: 50px;
 }
 
 /* summary section */
@@ -71,7 +79,6 @@ body {
 
 /* summary header */
 h1 {
-  font-family: inherit;
   font-size: 1.7rem;
   font-weight: 900;
   letter-spacing: 0.5px;
@@ -79,20 +86,21 @@ h1 {
 
 /* paragraph description */
 .description {
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 500;
   color: hsl(224, 23%, 55%);
-  text-align: center;
   padding-top: 20px;
+  text-align: center;
   margin-left: 50px;
   margin-right: 50px;
 }
 
+.description p {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
 /* inner box section */
 .inner-box {
-  width: 400px;
-  height: 75px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,8 +116,6 @@ h1 {
 /* music icon */
 .music-img {
   padding-left: 1rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 /* annual year div */
@@ -117,21 +123,21 @@ h1 {
   display: flex;
   flex-direction: column;
   padding-left: 16px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /* annual plan */
 h4 {
-  font-family: inherit;
   font-size: 1rem;
+  letter-spacing: 0.5px;
   font-weight: 900;
 }
 
 /* price */
 .price {
-  font-family: inherit;
   font-size: 1rem;
+  letter-spacing: 0.5px;
   font-weight: 500;
   color: hsl(224, 23%, 55%);
   padding-top: 0.3rem;
@@ -139,14 +145,11 @@ h4 {
 
 /* change */
 .change {
-  font-family: inherit;
-  font-size: 1rem;
+  letter-spacing: 0.5px;
   font-weight: 700;
   color: hsl(245, 75%, 52%);
   text-decoration: underline;
   margin-left: 130px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   padding-right: 20px;
   cursor: pointer;
 }
@@ -157,20 +160,20 @@ h4 {
 
 /* selection button */
 .selection {
-  font-family: inherit;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  /* cursor: pointer; */
 }
 
 /* payment button */
 .payment {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-weight: 700;
   width: 400px;
   height: 50px;
   border-radius: 15px;
@@ -181,17 +184,19 @@ h4 {
   cursor: pointer;
 }
 
+/* Proceed payment button */
 .selection :hover {
   background-color: hsl(245, 100%, 71%);
 }
+
 /* cancel button  */
 .cancel {
-  font-family: inherit;
-  margin-top: 20px;
-  color: hsl(224, 23%, 55%);
   font-size: 16px;
-  font-family: inherit;
+  letter-spacing: 0.5px;
   font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: hsl(224, 23%, 55%);
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -201,4 +206,44 @@ h4 {
 
 .cancel :hover {
   color: black;
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* media queries */
+
+@media only screen and (max-width: 375px) {
+  /* WAVES BACKGROUND */
+  .background {
+    /* width: auto;
+    height: 100vh; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Card */
+  .music-card {
+    width: 700px;
+    height: 512;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 5px 10px 18px hsl(224, 23%, 55%);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
 }
