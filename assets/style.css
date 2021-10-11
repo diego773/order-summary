@@ -8,48 +8,36 @@
 body {
   font-family: "Red Hat Display", sans-serif;
   background-color: hsl(225, 100%, 94%);
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url("../images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
-  background-size: contain;
-}
-
-/* WRAPPER */
-
-/* WAVES BACKGROUND */
-.background {
-  /* background-color: hsl(225, 100%, 94%);
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../images/pattern-background-desktop.svg");
-  background-repeat: no-repeat;
-  background-size: contain; */
+  background-size: 100% 55%;
 }
 
 /* Card */
+
 .music-card {
-  /* margin-top: 5rem; */
-  box-shadow: 5px 10px 18px hsl(224, 23%, 55%);
+  margin-top: 145px;
+  background-color: white;
+  width: 448px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  box-shadow: 0px 20px 20px hsl(224, 67%, 86%);
 }
 
-/* Hero image */
+/* Hero image header */
 .hero-header .image {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  max-width: 100%;
 }
 
 /* hero image header */
@@ -59,38 +47,32 @@ body {
 }
 
 /* middle container */
-.middle {
-  background-color: white;
-  width: 450px;
-  height: 450px;
-  padding-top: 40px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  /* margin-top: 100px; */
-  margin-bottom: 50px;
-}
 
 /* summary section */
 .summary {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /* summary header */
 h1 {
+  /* text-align: center; */
   font-size: 1.7rem;
   font-weight: 900;
   letter-spacing: 0.5px;
+  margin-top: 40px;
 }
 
 /* paragraph description */
 .description {
   color: hsl(224, 23%, 55%);
-  padding-top: 20px;
+  padding-top: 15px;
+  margin-left: 70px;
+  margin-right: 70px;
   text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  padding-top: 20px;
 }
 
 .description p {
@@ -98,33 +80,32 @@ h1 {
   font-weight: 500;
   letter-spacing: 0.5px;
 }
+
 /* inner box section */
 .inner-box {
   height: 100px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
-  margin-right: 30px;
   border-radius: 8px;
   background-color: hsl(225, 100%, 98%);
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 /* MIDDLE SECTION */
 
 /* music icon */
 .music-img {
-  padding-left: 1rem;
+  margin-right: 10px;
 }
 
 /* annual year div */
 .ann-yr {
   display: flex;
   flex-direction: column;
-  padding-left: 16px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  justify-content: space-between;
+  margin-right: 80px;
 }
 
 /* annual plan */
@@ -132,6 +113,8 @@ h4 {
   font-size: 1rem;
   letter-spacing: 0.5px;
   font-weight: 900;
+  margin-left: 10px;
+  padding-bottom: 9px;
 }
 
 /* price */
@@ -140,7 +123,7 @@ h4 {
   letter-spacing: 0.5px;
   font-weight: 500;
   color: hsl(224, 23%, 55%);
-  padding-top: 0.3rem;
+  margin-left: 11px;
 }
 
 /* change */
@@ -149,8 +132,6 @@ h4 {
   font-weight: 700;
   color: hsl(245, 75%, 52%);
   text-decoration: underline;
-  margin-left: 130px;
-  padding-right: 20px;
   cursor: pointer;
 }
 
@@ -162,11 +143,8 @@ h4 {
 .selection {
   font-size: 1rem;
   letter-spacing: 0.5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
+  text-align: center;
+  margin-top: 35px;
 }
 
 /* payment button */
@@ -174,13 +152,13 @@ h4 {
   font-size: 1rem;
   letter-spacing: 0.5px;
   font-weight: 700;
-  width: 400px;
+  width: 350px;
   height: 50px;
   border-radius: 15px;
   background-color: hsl(245, 75%, 52%);
   color: white;
   border: none;
-  box-shadow: 5px 10px 18px hsl(224, 23%, 55%);
+  box-shadow: 0px 25px 20px hsl(224, 73%, 90%);
   cursor: pointer;
 }
 
@@ -191,24 +169,24 @@ h4 {
 
 /* cancel button  */
 .cancel {
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0.5px;
   font-weight: 700;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: hsl(224, 23%, 55%);
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .cancel :hover {
   color: black;
+  cursor: pointer;
 }
 
 /* Footer */
+footer {
+  padding-top: 38px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -220,30 +198,192 @@ h4 {
 
 /* media queries */
 
-@media only screen and (max-width: 375px) {
-  /* WAVES BACKGROUND */
-  .background {
-    /* width: auto;
-    height: 100vh; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    background-image: url("../images/pattern-background-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Large Tablets */
+@media screen and (max-width: 1280px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
   }
 
   /* Card */
   .music-card {
-    width: 700px;
-    height: 512;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 5px 10px 18px hsl(224, 23%, 55%);
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    margin-top: 135px;
+  }
+}
+
+/* Medium Tablets */
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 55%;
+  }
+  /* Card */
+
+  .music-card {
+    margin-top: 135px;
+  }
+
+  /* cancel button  */
+  .cancel {
+    margin-top: 20px;
+  }
+
+  /* Footer */
+  footer {
+    padding-top: 68px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+  }
+
+  /* Card */
+  .music-card {
+    margin-top: 85px;
+    background-color: white;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Hero image header */
+  .hero-header .image {
+    width: 350px;
+  }
+
+  /* summary header */
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+
+  /* paragraph description */
+  .description {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    padding-top: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  .description p {
+    font-size: 12px;
+  }
+
+  /* inner box section */
+  .inner-box {
+    background-color: hsl(225, 100%, 98%);
+    height: 90px;
+    width: 305px;
+  }
+
+  /* annual year div */
+  .ann-yr {
+    margin-right: 55px;
+  }
+
+  /* annual plan */
+  h4 {
+    padding-bottom: 1px;
+    font-size: 1rem;
+  }
+
+  /* price */
+  .price {
+    font-size: 1rem;
+  }
+
+  /* change */
+  .change {
+    font-size: 14px;
+    border: none;
+  }
+
+  /* selection button */
+  .selection {
+    margin-top: 25px;
+  }
+
+  /* payment button */
+  .payment {
+    width: 305px;
+  }
+
+  /* cancel button  */
+  .cancel {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 31%;
+  }
+
+  /* Card */
+  .music-card {
+    margin-top: 65px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 325px;
+  }
+
+  /* Hero image header */
+  .hero-header .image {
+    width: 325px;
+  }
+
+  /* paragraph description */
+  .description {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+  }
+
+  /* inner box section */
+  .inner-box {
+    width: 300px;
+  }
+
+  /* annual year div */
+  .ann-yr {
+    margin-right: 40px;
+  }
+
+  /* annual plan */
+  h4 {
+    font-size: 15px;
+  }
+
+  /* price */
+  .price {
+    font-size: 15px;
+  }
+
+  /* payment button */
+  .payment {
+    width: 300px;
+    height: 50px;
+  }
+
+  /* cancel button  */
+  .cancel {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* Footer */
+  footer {
+    padding-top: 18px;
   }
 }
